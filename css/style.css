@@ -1,0 +1,19 @@
+.v-error{
+    border-color: red;
+}
+
+.v-success{
+    border-color: green;
+}
+
+.v-error:focus{
+    outline-color:red;
+    box-shadow:0 0 10px red;
+    border-color: red;
+}
+
+.v-success:focus{
+    outline-color:green;
+    box-shadow:0 0 10px green;
+    border-color: green;
+}

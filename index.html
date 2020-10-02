@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout RD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Empresa 100% confiavel</a>
+            <a class="btn btn-primary" href="#">Continuar comprando</a>
+        </nav>
+    </header>
+    <main class="container">
+        <form id="checkout" class="row mt-4">
+
+            <div class="col-md-4">
+                <header class="bg-dark text-light p-2">
+                    Dados Pessoais
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeUsuario">Nome Completo</label>
+                        <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario"
+                            placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfUsuario">CPF</label>
+                        <input class="form-control" type="text" id="cpfUsuario" name="cpfUsuario" maxlength="11"
+                            placeholder="Digite seu CPF">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefoneUsuario">Telefone</label>
+                        <input class="form-control" type="tel" id="telefoneUsuario" name="telefoneUsuario"
+                            placeholder="Digite seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailUsuario">Email</label>
+                        <input class="form-control" type="email" id="emailUsuario" name="emailUsuario"
+                            placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senhaUsuario">Senha</label>
+                        <input class="form-control" type="password" id="senhaUsuario" name="senhaUsuario"
+                            placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmarSenhaUsuario">Confirme a Senha</label>
+                        <input class="form-control" type="password" id="confirmarSenhaUsuario"
+                            name="confirmarSenhaUsuario" placeholder="Confirmar Senha">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="bg-dark text-light p-2">
+                    Entrega
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="cepUsuario">CEP</label>
+                        <input class="form-control" type="text" id="cepUsuario" name="cepUsuario"
+                            placeholder="Digite seu cep">
+                    </div>
+                    <div class="form-group">
+                        <label for="enderecoUsuario">Endereço</label>
+                        <input class="form-control" type="text" id="enderecoUsuario" name="enderecoUsuario"
+                            placeholder="Digite seu endereço">
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroUsuario">Numero</label>
+                        <input class="form-control" type="text" id="numeroUsuario" name="numeroUsuario"
+                            placeholder="Digite seu numero da residencia">
+                    </div>
+                    <div class="form-group">
+                        <label for="complementoUsuario">Complemento</label>
+                        <input class="form-control" type="text" id="complementoUsuario" name="complementoUsuario"
+                            placeholder="Digite seu complemento">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairroUsuario">Bairro</label>
+                        <input class="form-control" type="text" id="bairroUsuario" name="bairroUsuario"
+                            placeholder="Digite seu bairro">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="cidadeUsuario">Cidade</label>
+                            <input class="form-control" type="text" id="cidadeUsuario" name="cidadeUsuario"
+                                placeholder="Digite seu cidade">
+                        </div>
+                        <div class="col-6">
+                            <label for="estadoUsuario">Estado</label>
+                            <select id="estadoUsuario" name="estadoUsuario" class="form-control">
+                                <option value="" disabled selected>Estado</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">RJ</option>
+                                <option value="ES">ES</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="freteRapido">Frete rápido <br> R$ 50,00</label>
+                            <input type="radio" name="frete" id="freteRapido">
+                        </div>
+                        <div class="col-6">
+                            <label for="freteNormal">Frete Normal <br> R$ 20,00</label>
+                            <input type="radio" name="frete" id="freteNormal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="bg-dark text-light p-2">
+                    Pagamento
+                </header>
+                <div class="d-flex justify-content-center flex-column p-2">
+                    <h4>Camiseta Branca GG</h4>
+                    <p>R$ 20,00</p>
+                </div>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="cartao">Numero do Cartão</label>
+                        <input class="form-control" type="number" name="cartao" id="cartao"
+                            placeholder="Numero do Cartão">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-8">
+                            <label for="validadeCartao">Validade do Cartão</label>
+                            <input class="form-control" type="month" name="validadeCartao" id="validadeCartao"
+                                placeholder="data do Cartão">
+                        </div>
+                        <div class="col-4">
+                            <label for="CVVCartao">CVV</label>
+                            <input class="form-control" type="number" name="CVVCartao" id="CVVCartao" placeholder="CVV">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomeTitular">Nome do titular</label>
+                        <input class="form-control" type="number" name="nomeTitular" id="nomeTitular"
+                            placeholder="Titular do cartão">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfTitular">CPF do titular</label>
+                        <input class="form-control" type="text" name="cpfTitular" id="cpfTitular"
+                            placeholder="CPF do cartão">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-success" type="button" data-toggle="modal"
+                            data-target="#compraFinalizada">Finalizar Compra</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+    </main>
+    <div id="compraFinalizada" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Compra relizada com sucesso!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Uhuul!!!!<br> Parabens pela sua compra!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Beleza</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

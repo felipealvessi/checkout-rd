@@ -1,5 +1,10 @@
 console.log("Projeto Checkout");
+
 const inputCep = document.querySelector("#cepUsuario");
+
+let inputEndereco = document.querySelector("#cepUsiario");
+let inputEndereco = document.querySelector("#bairroUsiario");
+let inputEndereco = document.querySelector("#cidadeUsiario");
 
 inputCep.addEventListener("keyup", apiCEP);
 
@@ -12,9 +17,10 @@ async function apiCEP(e) {
     );
 
     let cep = await resposta.json();
+    inputEndereco.value = cep.street;
+    inputBairro.value = cep.neighborhood;
+    inputCidade.value = cep.city;
 
-    console.log(cep);
   }
-
 }
 
